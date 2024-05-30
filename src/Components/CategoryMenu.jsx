@@ -39,10 +39,8 @@ const CategoryMenu = () => {
             <button
               onClick={() => dispatch(setCategory(category))}
               key={index}
-              className={`px-3 py-2 bg-gray-300 font-bold rounded-lg hover:bg-green-500 hover:text-white ${
-                selectedCategory === category && "bg-green-500 text-white"
-              }`}
-            >
+              className={`px-3 py-2 bg-gray-300 font-bold rounded-lg hover:bg-green-500 hover:text-white 
+              ${selectedCategory === category && "bg-green-500 text-white"}`}>
               {category}
             </button>
           );
